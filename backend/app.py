@@ -3,7 +3,7 @@ from lex.lexical import Lexcial
 from syntax.syntax import Syntax,PredictingAnalysisTable
 from flask_cors import CORS
 
-app = Flask(__name__,static_folder = "./dist/static",template_folder = "./dist")
+app = Flask(__name__)
 CORS(app, supports_credentials=True,origins="*")  # 设置跨域
 @app.route('/')
 def panel():
